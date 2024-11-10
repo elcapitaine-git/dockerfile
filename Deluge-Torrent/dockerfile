@@ -1,0 +1,3 @@
+FROM linuxserver/deluge:latest
+RUN apk update
+RUN apk add cifs-utils
