@@ -1,0 +1,3 @@
+FROM httpd:latest
+RUN apk update
+RUN apk add express sqlite3 body-parser
