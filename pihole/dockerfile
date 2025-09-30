@@ -1,0 +1,2 @@
+FROM pihole/pihole:latest
+RUN apk update
