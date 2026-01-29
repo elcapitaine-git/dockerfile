@@ -43,5 +43,5 @@ RUN adduser --system --group netbox && \
 # This runs postgres in the foreground, which is typical for Docker containers
 # Set the default command to run the Redis server
 
-CMD ["postgres", "-D", "/var/lib/postgresql/data", "-c", "config_file=/etc/postgresql/postgresql.conf", "-c", "hba_file=/etc/postgresql/pg_hba.conf","redis-server", "--save", "60", "1"]
+#CMD ["postgres", "-D", "/var/lib/postgresql/data", "-c", "config_file=/etc/postgresql/postgresql.conf", "-c", "hba_file=/etc/postgresql/pg_hba.conf","redis-server", "--save", "60", "1"]
 
