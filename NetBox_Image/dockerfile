@@ -34,7 +34,7 @@ RUN wget https://github.com/netbox-community/netbox/archive/refs/tags/v4.5.1.tar
 RUN adduser --system --group netbox && \
     chown --recursive netbox /opt/netbox/netbox/media/ && \
     chown --recursive netbox /opt/netbox/netbox/reports/ && \
-    chown --recursive netbox /opt/netbox/netbox/scripts/ %% \
+    chown --recursive netbox /opt/netbox/netbox/scripts/ && \
     cd /opt/netbox/netbox/netbox/ && \
     cp configuration_example.py configuration.py
 
